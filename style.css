@@ -1,0 +1,10 @@
+
+body {
+    background-color: blueviolet;
+}
+
+p, .idade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
