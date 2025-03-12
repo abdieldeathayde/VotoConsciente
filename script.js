@@ -1,14 +1,24 @@
 function votar(){
     idade = document.getElementById("idade").value;
-    menor = document.getElementById("res");
+    resultado = document.getElementById("res");
+    imagem = document.getElementById("img");
     if (idade < 16) {
-        menor.innerHTML = "Você não pode votar!";
+        resultado.innerHTML = "Você não pode votar!";
+        
+        imagem.src = "img/menorDeIdade.jpeg";
+        imagemMenor.style.width = "200px";
+    }else if (idade >= 16 && idade < 18) {
+        resultado.innerHTML = "Você pode votar, mas não é obrigado!";
+        imagem.src = "img/adulto.jpeg";
     } else {
         if (idade >= 18 && idade <= 70) {
-            menor.innerHTML = "Você pode votar!";
+            resultado.innerHTML = "Você pode votar!";
+            imagem.src = "img/adulto.jpeg";
         } else {
-            menor.innerHTML = "Você não é obrigado a votar!";
+            resultado.innerHTML = "Você não é obrigado a votar!";
+            imagem.src = "img/idoso.jpeg";
         }
     }
+
 
 }
