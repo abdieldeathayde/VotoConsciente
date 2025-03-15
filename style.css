@@ -3,10 +3,17 @@ body {
     background-color: aqua;
 }
 
-p, .idade {
+h1, p {
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
+
+#img, #idade, .botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 
 
